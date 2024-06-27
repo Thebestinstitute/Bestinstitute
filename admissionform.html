@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        AdmissionForm
+    </title>
+
+    <style>
+        /* Styling the Body element 
+        i.e. Color, Font, Alignment */
+        body {
+            background-color: blue;
+            font-family: Verdana;
+            text-align: center;
+			Font:bold;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: gray;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Admission Form</h1>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                <b><u>Full Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" 
+                   placeholder="Enter your Full Name" />
+        </div>
+
+       
+	    <div class="form-control">
+            <label for="email" id="label-email">
+                Father Name
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" 
+                   placeholder="Enter your Father's Name" />
+        </div>
+
+			<div class="form-control">
+            <label for="email" id="label-email">
+                E mail
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" 
+                   placeholder="Enter your Email address" />
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" 
+                   placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Last Qualification
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">10+2</option>
+                <option value="intern">graduation</option>
+                <option value="professional">
+                    Post graduation 
+                </option>
+                <option value="other">Others</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                In which class do you get admission 
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" 
+                       name="recommed">BA
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" 
+                       name="recommed">B Sc
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" 
+                       name="recommed">B Com 
+			<label for="recommed-4">
+                <input type="radio" id="recommed-3" 
+                       name="recommed">M Com 
+			<label for="recommed-5">
+                <input type="radio" id="recommed-3" 
+                       name="recommed">M Sc 
+			<label for="recommed-6">
+                <input type="radio" id="recommed-3" 
+                       name="recommed">MA 
+            <label for="recommed-7">
+                <input type="radio" id="recommed-3" 
+                       name="recommed">B com 
+			<label for="recommed-8">
+                <input type="radio" id="recommed-3" 
+                       name="recommed">B com 
+			</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Subjects that you  have study in next session
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Hindi
+                  </input>
+              </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">English
+                  </input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">History
+                  </input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Pol.Science
+                  </input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Chemistry
+                  </input>
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">Mathematics 
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Sanskrit
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Biology
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Physics
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Commerce
+                  </input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Full Correspondence Adress</b></u>
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" 
+                      placeholder="Enter your address here">
+            </textarea>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>
